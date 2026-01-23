@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/javi/github/Network_Simulator/src/build/cmake_install.cmake",
+		"/home/javi/github/Network_Simulator/src/build/board/cmake_install.cmake",
+		"/home/javi/github/Network_Simulator/src/build/event/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
