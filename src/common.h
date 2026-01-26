@@ -11,10 +11,12 @@
 
 //----------------------------------------------------------------
 #define FREQ 12500000 // 12.5 Mbps
-#define TBUS 1.28     // us por word de 16 bits
+#define TWBUS 1.28     // us por word de 16 bits
+#define TBBUS 0.640   // us por word de 16 bits
 #define TG   0.01     // us decidido
 #define TP   12       // us de RTT por esclavo
 #define TG1  5        // us entre envio y envio de referencias
+#define TWAIT 15      // us que espera la recepción del mensaje
 
 //----------------------------------------------------------------
 #define MAX_EVENTS 1024

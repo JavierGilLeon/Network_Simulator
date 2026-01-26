@@ -1,6 +1,7 @@
 
 #include "board.h"
 #include "event.h"
+#include "stdlib.h"
 
 DEVICE M;
 DEVICE S1;
@@ -23,12 +24,19 @@ void requestMeasure(double time, DEVICE* dst, MSG* msg){
     addEvent(MSG_SENT, totalTime + TG, &M, dst);
 
     // ------ S1 recibe peticion y envia medidas -----------
-    addEvent(MSG_RECEIVED, totalTime + TG + UART_HEADER_SIZE*TBUS, &M, dst);
-    addEvent(PROCESSING_MSG_END, totalTime + TP, dst, dst);
-    addEvent(MSG_SENT, totalTime + TG, dst, &M);
 
-    // ------ M recibe medidas ----------
-    addEvent(MSG_RECEIVED, totalTime + (UART_HEADER_SIZE + msg->header.lenght)*TBUS, dst, &M);
+    if((rand() % (10)) == 3)
+        addEvent(MSG_LOST, totalTime + TG + TWAIT, &M, dst);
+    else 
+    {
+        addEvent(MSG_RECEIVED, totalTime + TG + UART_HEADER_SIZE*TWBUS + TBBUS, &M, dst);
+
+        addEvent(PROCESSING_MSG_END, totalTime + TP, dst, dst);
+        addEvent(MSG_SENT, totalTime + TG, dst, &M);
+
+        // ------ M recibe medidas ----------
+        addEvent(MSG_RECEIVED, totalTime + (UART_HEADER_SIZE + msg->header.lenght)*TWBUS + TBBUS, dst, &M);
+    }
 }
 
 void sendReferences(double time, DEVICE* dst, MSG* msg){

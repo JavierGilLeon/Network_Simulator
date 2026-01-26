@@ -14,15 +14,21 @@ void handleEvent(EVENT e){
     case MSG_SENT:
         printf("%d envia un mensaje hacia %d en t = %lf us\n", e.src, e.dst, e.time);
         break;
+
     case TX_END:
         printf("%d ha terminado de enviar un mensaje hacia %d en t = %lf us\n", e.src, e.dst, e.time);
         break;
+
     case MSG_RECEIVED:
         printf("%d ha recibido un mensaje proveniente de %d en t = %lf us\n", e.dst, e.src, e.time);
         break;
+
     case PROCESSING_MSG_END:
         printf("%d ha terminado de procesar un mensaje en t = %lf us\n", e.src, e.time);
         break;
+    
+    case MSG_LOST:
+        printf("Ha vencido el timer de %d sin que llegue el mensaje, t = %lf us\n",e.dst,e.time);
     
     default:
         break;

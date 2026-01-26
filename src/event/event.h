@@ -10,7 +10,8 @@ typedef enum event_type{
     MSG_SENT             = 0,
     TX_END               = 1,
     MSG_RECEIVED         = 2,
-    PROCESSING_MSG_END   = 3
+    PROCESSING_MSG_END   = 3,
+    MSG_LOST             = 4
 } EVENT_TYPE;
 
 

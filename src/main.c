@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 #include "common.h"
 #include "board.h"
@@ -6,6 +8,11 @@
 
 int main(int argc, char* argv[])
 {
+
+    time_t now = time(NULL);
+    struct tm *t = localtime(&now);
+
+    srand(t->tm_sec);
 
     InitBoards();
 
