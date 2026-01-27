@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/Network_Emulator.dir/link.d CMakeFiles/Network_Emulator.dir/main.c.o -o Network_Emulator  board/libboard.a event/libevent.a

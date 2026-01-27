@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/javi/github/Network_Simulator/build",
+  "command": "/usr/bin/cc  -I/home/javi/github/Network_Simulator/include  -o CMakeFiles/Network_Emulator.dir/src/main.c.o -c /home/javi/github/Network_Simulator/src/main.c",
+  "file": "/home/javi/github/Network_Simulator/src/main.c",
+  "output": "CMakeFiles/Network_Emulator.dir/src/main.c.o"
+},
+{
+  "directory": "/home/javi/github/Network_Simulator/build",
+  "command": "/usr/bin/cc  -I/home/javi/github/Network_Simulator/include  -o CMakeFiles/Network_Emulator.dir/src/event.c.o -c /home/javi/github/Network_Simulator/src/event.c",
+  "file": "/home/javi/github/Network_Simulator/src/event.c",
+  "output": "CMakeFiles/Network_Emulator.dir/src/event.c.o"
+},
+{
+  "directory": "/home/javi/github/Network_Simulator/build",
+  "command": "/usr/bin/cc  -I/home/javi/github/Network_Simulator/include  -o CMakeFiles/Network_Emulator.dir/src/board.c.o -c /home/javi/github/Network_Simulator/src/board.c",
+  "file": "/home/javi/github/Network_Simulator/src/board.c",
+  "output": "CMakeFiles/Network_Emulator.dir/src/board.c.o"
+}
+]

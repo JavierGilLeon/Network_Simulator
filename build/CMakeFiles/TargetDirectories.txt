@@ -1,0 +1,3 @@
+/home/javi/github/Network_Simulator/build/CMakeFiles/Network_Emulator.dir
+/home/javi/github/Network_Simulator/build/CMakeFiles/edit_cache.dir
+/home/javi/github/Network_Simulator/build/CMakeFiles/rebuild_cache.dir

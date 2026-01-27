@@ -5,9 +5,15 @@
 #include "common.h"
 #include "board.h"
 #include "event.h"
+#include "raylib.h"
 
 int main(int argc, char* argv[])
 {
+
+    /*const int width = 800;
+    const int height = 450;
+
+    InitWindow(width,height, "Simulador de Redes");*/
 
     time_t now = time(NULL);
     struct tm *t = localtime(&now);
@@ -40,6 +46,16 @@ int main(int argc, char* argv[])
         handleEvent(evQueue[i - numEvents]);
         printf("---------------------\n");
     }
+
+    /*while(!WindowShouldClose())
+    {
+        BeginDrawing();
+            ClearBackground(RAYWHITE);
+            DrawText("Prueba",190,190,20,LIGHTGRAY);
+        EndDrawing();
+    }
+
+    CloseWindow();*/
 
     return 0;
 }
