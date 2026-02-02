@@ -1,20 +1,26 @@
 [
 {
   "directory": "/home/javi/github/Network_Simulator/build",
-  "command": "/usr/bin/cc  -I/home/javi/github/Network_Simulator/include  -o CMakeFiles/Network_Emulator.dir/src/main.c.o -c /home/javi/github/Network_Simulator/src/main.c",
+  "command": "/usr/bin/gcc -I/home/javi/github/Network_Simulator/include -g -o CMakeFiles/Network_Emulator.dir/src/main.c.o -c /home/javi/github/Network_Simulator/src/main.c",
   "file": "/home/javi/github/Network_Simulator/src/main.c",
-  "output": "CMakeFiles/Network_Emulator.dir/src/main.c.o"
+  "output": "/home/javi/github/Network_Simulator/build/CMakeFiles/Network_Emulator.dir/src/main.c.o"
 },
 {
   "directory": "/home/javi/github/Network_Simulator/build",
-  "command": "/usr/bin/cc  -I/home/javi/github/Network_Simulator/include  -o CMakeFiles/Network_Emulator.dir/src/event.c.o -c /home/javi/github/Network_Simulator/src/event.c",
+  "command": "/usr/bin/gcc -I/home/javi/github/Network_Simulator/include -g -o CMakeFiles/Network_Emulator.dir/src/event.c.o -c /home/javi/github/Network_Simulator/src/event.c",
   "file": "/home/javi/github/Network_Simulator/src/event.c",
-  "output": "CMakeFiles/Network_Emulator.dir/src/event.c.o"
+  "output": "/home/javi/github/Network_Simulator/build/CMakeFiles/Network_Emulator.dir/src/event.c.o"
 },
 {
   "directory": "/home/javi/github/Network_Simulator/build",
-  "command": "/usr/bin/cc  -I/home/javi/github/Network_Simulator/include  -o CMakeFiles/Network_Emulator.dir/src/board.c.o -c /home/javi/github/Network_Simulator/src/board.c",
+  "command": "/usr/bin/gcc -I/home/javi/github/Network_Simulator/include -g -o CMakeFiles/Network_Emulator.dir/src/board.c.o -c /home/javi/github/Network_Simulator/src/board.c",
   "file": "/home/javi/github/Network_Simulator/src/board.c",
-  "output": "CMakeFiles/Network_Emulator.dir/src/board.c.o"
+  "output": "/home/javi/github/Network_Simulator/build/CMakeFiles/Network_Emulator.dir/src/board.c.o"
+},
+{
+  "directory": "/home/javi/github/Network_Simulator/build",
+  "command": "/usr/bin/gcc -I/home/javi/github/Network_Simulator/include -g -o CMakeFiles/Network_Emulator.dir/src/window.c.o -c /home/javi/github/Network_Simulator/src/window.c",
+  "file": "/home/javi/github/Network_Simulator/src/window.c",
+  "output": "/home/javi/github/Network_Simulator/build/CMakeFiles/Network_Emulator.dir/src/window.c.o"
 }
 ]

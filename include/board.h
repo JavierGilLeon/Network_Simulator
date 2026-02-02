@@ -19,15 +19,9 @@ typedef struct msg{
 
 
  // ----------- DECLARACION DE LAS PLACAS SIMULADAS -----------------
-typedef enum device_name{
-    MASTER = 0,
-    SLAVE1 = 1,
-    SLAVE2 = 2,
-    SLAVE3 = 3
-}DEVICE_NAME;
 
 typedef struct device{
-    DEVICE_NAME ID;
+    long unsigned int ID;
     int src;
     int dst;
 } DEVICE;
@@ -39,7 +33,9 @@ extern DEVICE S2;
 extern DEVICE S3;
 
 
-void InitBoards(void);
-void requestMeasure(double time, DEVICE* dst, MSG* msg);
-void sendReferences(double time, DEVICE* dst, MSG* msg);
+void requestMeasure(unsigned long int dst);
+void sendReferences(DEVICE* dst);
+
+void CommActiveWait(unsigned long int numSlaves);
+void CommActiveWaitBroadcast(unsigned long int numSlaves);
 #endif

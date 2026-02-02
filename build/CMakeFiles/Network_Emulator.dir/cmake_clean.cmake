@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Network_Emulator.dir/src/event.c.o.d"
   "CMakeFiles/Network_Emulator.dir/src/main.c.o"
   "CMakeFiles/Network_Emulator.dir/src/main.c.o.d"
+  "CMakeFiles/Network_Emulator.dir/src/window.c.o"
+  "CMakeFiles/Network_Emulator.dir/src/window.c.o.d"
   "Network_Emulator"
   "Network_Emulator.pdb"
 )

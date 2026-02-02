@@ -1,0 +1,6 @@
+# ninja log v5
+2	58	1769777133599539791	CMakeFiles/Network_Emulator.dir/src/event.c.o	abb65bc9cdc9defb
+2	68	1769777133610121228	CMakeFiles/Network_Emulator.dir/src/board.c.o	698de62a3a904079
+3	73	1769777133614539807	CMakeFiles/Network_Emulator.dir/src/window.c.o	a700292884e8b8b2
+1	427	1769777133968883565	CMakeFiles/Network_Emulator.dir/src/main.c.o	90d2dc10591b8594
+427	487	1769777134026540250	Network_Emulator	90719f0c95dc1366
